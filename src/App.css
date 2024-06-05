@@ -1,0 +1,175 @@
+.App {
+  text-align: center;
+}
+.weather-bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card {
+  margin: 2rem;
+  width: 40%;
+  height: 100%;
+  background-color: rgb(27, 152, 224);
+  border-radius: 5rem;
+  padding: 2rem;
+  transition: 0.3s ease;
+  position: relative;
+}
+.card:hover {
+  background-color: #1b98e0;
+  box-shadow: 2px 2px 12px #13293d;
+  transform: scale(1.05);
+}
+.input-field {
+  border-radius: 1.5rem;
+  border: 0px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-size: 25px;
+  margin: 10px;
+  background-color: #cbe5ec;
+  color: rgb(95, 93, 93);
+  padding: 0.5rem 8rem 0.5rem 8rem;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.input-field:hover {
+  box-shadow: 2px 2px 12px #13293d;
+  transform: scale(1.05);
+}
+.btn {
+  border: 0px;
+  padding: 10px 20px;
+  border-radius: 2rem;
+  margin: 5px;
+  cursor: pointer;
+  background-color: rgb(27, 152, 224);
+  width: auto;
+  color: #e8f1f2;
+  font-weight: 600;
+  padding: 0.5rem 4rem 0.5rem 4rem;
+  transition: 0.3s ease;
+}
+.btn:hover {
+  box-shadow: 2px 2px 12px #13293d;
+  transform: scale(1.05);
+}
+body {
+  background-image: Url("/public/image/light_bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+::placeholder {
+  color: rgb(144, 137, 137);
+  font-size: 20px;
+  text-align: center;
+  opacity: 0.5;
+}
+.weather-temp {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e8f1f2;
+  text-shadow: 2px 2px #247ba0;
+}
+.heading {
+  color: #006494;
+  text-shadow: 4px 4px #d0e1d4;
+  font-weight: 700;
+  font-size: 4rem;
+  margin: 3rem 0 1rem;
+  transition: 0.3s ease;
+}
+.heading:hover {
+  transform: scale(1.05);
+}
+.weathorIcon {
+  width: 6rem;
+  height: 6rem;
+  padding: 0;
+  size: 3rem;
+  transition: 0.3s ease;
+}
+.weathorIcon:hover {
+  transform: scale(1.6);
+  cursor: pointer;
+}
+.btn-dark {
+  background-color: #1b98e0;
+  cursor: pointer;
+  color: #e8f1f2;
+  border: none;
+  border-radius: 3rem;
+  width: 5%;
+  position: absolute;
+  right: 6%;
+  top: 5%;
+  padding: 0.5rem;
+  font-size: 2rem;
+  transition: 0.3s ease;
+}
+.btn-dark:hover {
+  background-color: rgb(62, 169, 231);
+  color: #e8f1f2;
+  box-shadow: 2px 2px 12px rgb(61, 69, 74);
+  transform: scale(1.2);
+}
+.dark-theme {
+  background: url("/public/image/dark-theme-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 4px 4px #2f4858;
+  color: #ecf0f1;
+}
+.dark-theme .card {
+  background-color: #292c35;
+  box-shadow: 2px 2px 6px #13293d;
+}
+.dark-theme .btn {
+  background-color: #292c35;
+}
+.dark-theme .heading {
+  font-weight: 700;
+  font-size: 4rem;
+  margin: 3rem 0 1rem;
+  text-shadow: 4px 4px #2f4858;
+  color: #ecf0f1;
+}
+.dark-theme .btn-dark {
+  background-color: #292c35;
+}
+
+@media (max-width: 1700px) {
+  .btn-dark {
+    width: 8%;
+  }
+}
+
+@media (max-width: 750px) {
+  .heading {
+    font-size: 3rem;
+  }
+  .input-field {
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  }
+  .btn-dark {
+    width: 10%;
+  }
+  .btn {
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  }
+}
+@media (max-width: 550px) {
+  .btn-dark {
+    width: 20%;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .input-field {
+    width: 50%;
+  }
+}
